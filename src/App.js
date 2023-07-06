@@ -1,6 +1,7 @@
 import React from 'react';
 import { Home } from './routes/Home';
 import { About } from './routes/About';
+import { Greet } from './routes/Greet';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 const piussRouter = createBrowserRouter([
@@ -11,6 +12,10 @@ const piussRouter = createBrowserRouter([
     {
         path: 'about',
         element: <About />
+    },
+    {
+        path: 'greet/:name',
+        element: <Greet />
     }
 ])
 
